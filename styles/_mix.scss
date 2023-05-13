@@ -1,0 +1,33 @@
+@mixin dcsb {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin dfds {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+@mixin dfdc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@mixin dj {
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin da {
+  display: flex;
+  align-items: center;
+}
+
+@mixin dcc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

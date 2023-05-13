@@ -1,0 +1,20 @@
+@import "./mix";
+@import "./fonts";
+@import "./color";
+
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: "Baloo 2", cursive;
+}
+
+$AllRadius: 20px;
+$AllTransition: 0.3s;
