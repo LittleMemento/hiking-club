@@ -9,6 +9,11 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <!-- swiper slider -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
     <!-- css -->
     <link rel="stylesheet" href="./styles/style.css" />
     <title>MOUNTAIN - hiking club</title>
@@ -22,7 +27,7 @@
         </a>
         <div class="nav_left_side">
           <form class="search_input">
-            <i class='bx bxs-search search_icon_nav'></i>
+            <i class="bx bxs-search search_icon_nav"></i>
             <input
               type="text"
               placeholder="Search for places"
@@ -46,7 +51,149 @@
           </a>
         </div>
       </nav>
+      <div class="focus_center">
+        <div class="side_bar">
+          <a href="./index.html" class="bar_links">
+            <i class="bx bxs-home bar_icon"></i>
+            <small class="bar_link_text">Dashboard</small>
+          </a>
+          <a href="./index.html" class="bar_links">
+            <i class="bx bxs-copy-alt bar_icon"></i>
+            <small class="bar_link_text">Note's</small>
+          </a>
+          <a href="./index.html" class="bar_links">
+            <i class="bx bxs-moon bar_icon"></i>
+            <small class="bar_link_text">Theme</small>
+          </a>
+          <a href="./index.html" class="bar_links">
+            <i class="bx bxs-group bar_icon"></i>
+            <small class="bar_link_text">Account</small>
+          </a>
+          <a href="./index.html" class="bar_links">
+            <i class="bx bxs-component bar_icon"></i>
+            <small class="bar_link_text">Explore</small>
+          </a>
+          <a href="./index.html" class="bar_links">
+            <i class="bx bxs-pie-chart-alt-2 bar_icon"></i>
+            <small class="bar_link_text">Graph</small>
+          </a>
+          <a href="./index.html" class="bar_links">
+            <i class="bx bxs-envelope bar_icon"></i>
+            <small class="bar_link_text">Messages</small>
+          </a>
+          <a href="./index.html" class="bar_links">
+            <i class="bx bxs-cog bar_icon"></i>
+            <small class="bar_link_text">Setting</small>
+          </a>
+        </div>
+        <div class="main_block">
+          <h1>Discover World</h1>
+          <div class="slide_links">
+            <a href="#!" class="slid_text">Recommended</a>
+            <a href="#!" class="slid_text">Popular Places</a>
+            <a href="#!" class="slid_text">Trip's</a>
+          </div>
+          <div class="swiper mySwiper slider_cards">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <i class="bx bxs-heart slike_icon"></i>
+                <img src="./images/slider-mountain1.png" alt="img" />
+                <h4>Moonlight Night</h4>
+                <div class="rank">
+                  <span>
+                    <i class="bx bxs-map slid_map"></i>
+                    <small>Canada</small>
+                  </span>
+                  <span>
+                    <i class="bx bxs-star slid_star"></i>
+                    <small>4.7</small>
+                  </span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <i class="bx bxs-heart slike_icon"></i>
+                <img src="./images/slider-mountain2.png" alt="img" />
+                <h4>Sahara Desert</h4>
+                <div class="rank">
+                  <span>
+                    <i class="bx bxs-map slid_map"></i>
+                    <small>Africa</small>
+                  </span>
+                  <span>
+                    <i class="bx bxs-star slid_star"></i>
+                    <small>4.9</small>
+                  </span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <i class="bx bxs-heart slike_icon"></i>
+                <img src="./images/slider-mountain3.png" alt="img" />
+                <h4>Night Camping</h4>
+                <div class="rank">
+                  <span>
+                    <i class="bx bxs-map slid_map"></i>
+                    <small>New York</small>
+                  </span>
+                  <span>
+                    <i class="bx bxs-star slid_star"></i>
+                    <small>5.0</small>
+                  </span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <i class="bx bxs-heart slike_icon"></i>
+                <img src="./images/slider-mountain2.png" alt="img" />
+                <h4>Sahara Desert</h4>
+                <div class="rank">
+                  <span>
+                    <i class="bx bxs-map slid_map"></i>
+                    <small>Africa</small>
+                  </span>
+                  <span>
+                    <i class="bx bxs-star slid_star"></i>
+                    <small>4.9</small>
+                  </span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <i class="bx bxs-heart slike_icon"></i>
+                <img src="./images/slider-mountain1.png" alt="img" />
+                <h4>Moonlight Night</h4>
+                <div class="rank">
+                  <span>
+                    <i class="bx bxs-map slid_map"></i>
+                    <small>Canada</small>
+                  </span>
+                  <span>
+                    <i class="bx bxs-star slid_star"></i>
+                    <small>4.7</small>
+                  </span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <i class="bx bxs-heart slike_icon"></i>
+                <img src="./images/slider-mountain3.png" alt="img" />
+                <h4>Night Camping</h4>
+                <div class="rank">
+                  <span>
+                    <i class="bx bxs-map slid_map"></i>
+                    <small>New York</small>
+                  </span>
+                  <span>
+                    <i class="bx bxs-star slid_star"></i>
+                    <small>5.0</small>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="extra_side"></div>
+      </div>
     </div>
+
+    <!-- swiper slider js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
     <!-- js -->
     <script src="./main.js"></script>

@@ -31,3 +31,15 @@
   align-items: center;
   justify-content: center;
 }
+
+@mixin dfcj {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+@mixin daca {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
