@@ -183,7 +183,7 @@ body {
   padding: 10px;
 }
 .focus_center .main_block .slider_cards .swiper-slide {
-  width: 25%;
+  width: 22%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -195,6 +195,7 @@ body {
 }
 .focus_center .main_block .slider_cards .swiper-slide img {
   width: 100%;
+  height: 220px;
   border-radius: 30px;
 }
 .focus_center .main_block .slider_cards .swiper-slide h4 {
@@ -237,6 +238,93 @@ body {
   border-radius: 50%;
   background-color: #18333e;
   font-size: 22px;
+}
+.focus_center .main_block .date_bt {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.focus_center .main_block .date_bt h2 {
+  font-weight: 600;
+  font-size: 30px;
+  color: #18333e;
+  letter-spacing: 1px;
+}
+.focus_center .main_block .date_bt .btn_date {
+  font-weight: 500;
+  font-size: 16px;
+  color: #18333e;
+  padding: 15px 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1019607843);
+  border-radius: 30px;
+  background-color: transparent;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1019607843);
+  cursor: pointer;
+}
+.focus_center .main_block .week_days {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.focus_center .main_block .week_days .week_day_ones {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 18px;
+  margin: 20px 20px 20px 0;
+  border-radius: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1019607843);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1019607843);
+  background-color: transparent;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.focus_center .main_block .week_days .week_day_ones .wday {
+  font-weight: 400;
+  font-size: 16px;
+  color: #808080;
+  opacity: 0.8;
+  transition: 0.3s;
+}
+.focus_center .main_block .week_days .week_day_ones .linedot {
+  padding: 5px 2.5px;
+  border-radius: 30px;
+  margin: 2.5px 0;
+  transition: 0.3s;
+}
+.focus_center .main_block .week_days .week_day_ones .nday {
+  font-weight: 500;
+  font-size: 22px;
+  color: #18333e;
+  transition: 0.3s;
+}
+.focus_center .main_block .week_days .week_day_ones:hover {
+  background-color: #18333e;
+}
+.focus_center .main_block .week_days .week_day_ones:hover .wday {
+  color: #ffffff;
+}
+.focus_center .main_block .week_days .week_day_ones:hover .linedot {
+  background-color: #ffa900;
+}
+.focus_center .main_block .week_days .week_day_ones:hover .nday {
+  color: #ffffff;
+}
+.focus_center .main_block .week_days .tenth_active {
+  background-color: #18333e;
+}
+.focus_center .main_block .week_days .tenth_active .wday {
+  color: #ffffff;
+}
+.focus_center .main_block .week_days .tenth_active .linedot {
+  background-color: #ffa900;
+}
+.focus_center .main_block .week_days .tenth_active .nday {
+  color: #ffffff;
 }
 .focus_center .extra_side {
   width: 25%;

@@ -155,7 +155,7 @@
       margin-top: 30px;
       padding: 10px;
       .swiper-slide {
-        width: 25%;
+        width: 22%;
         @include dfds;
         background-color: $TextColor;
         cursor: pointer;
@@ -164,6 +164,7 @@
         position: relative;
         img {
           width: 100%;
+          height: 220px;
           border-radius: $AllRadius;
         }
         h4 {
@@ -204,6 +205,87 @@
           border-radius: 50%;
           background-color: $TextColor;
           font-size: $MediumSize;
+        }
+      }
+    }
+    .date_bt {
+      width: 100%;
+      @include dcsb;
+      margin-top: 50px;
+      h2 {
+        font-weight: 600;
+        font-size: $LargeSizeX;
+        color: $TextColor;
+        letter-spacing: 1px;
+      }
+      .btn_date {
+        font-weight: 500;
+        font-size: $SmallSize;
+        color: $TextColor;
+        padding: 15px 30px;
+        border: 1px solid $ShadowColor;
+        border-radius: $AllRadius;
+        background-color: transparent;
+        box-shadow: 0 0 10px $ShadowColor;
+        cursor: pointer;
+      }
+    }
+    .week_days {
+      width: 100%;
+      @include dcsb;
+      margin-top: 30px;
+      .week_day_ones {
+        @include dfdc;
+        padding: 20px 18px;
+        margin: 20px 20px 20px 0;
+        border-radius: $AllRadius;
+        border: 1px solid $ShadowColor;
+        box-shadow: 0 0 10px $ShadowColor;
+        background-color: transparent;
+        cursor: pointer;
+        transition: $AllTransition;
+        .wday {
+          font-weight: 400;
+          font-size: $SmallSize;
+          color: $Silver;
+          opacity: 0.8;
+          transition: $AllTransition;
+        }
+        .linedot {
+          padding: 5px 2.5px;
+          border-radius: $AllRadius;
+          margin: 2.5px 0;
+          transition: $AllTransition;
+        }
+        .nday {
+          font-weight: 500;
+          font-size: $MediumSize;
+          color: $TextColor;
+          transition: $AllTransition;
+        }
+        &:hover {
+          background-color: $TextColor;
+          .wday {
+            color: $Light;
+          }
+          .linedot {
+            background-color: $Warning;
+          }
+          .nday {
+            color: $Light;
+          }
+        }
+      }
+      .tenth_active {
+        background-color: $TextColor;
+        .wday {
+          color: $Light;
+        }
+        .linedot {
+          background-color: $Warning;
+        }
+        .nday {
+          color: $Light;
         }
       }
     }
