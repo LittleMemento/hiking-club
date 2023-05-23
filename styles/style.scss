@@ -9,6 +9,9 @@
   padding: 20px 100px;
   @include dcsb;
   box-shadow: 0 0 10px $ShadowColor;
+  background-color: $Light;
+  position: sticky;
+  top: 0;
   z-index: 100;
   .logo {
     width: 15%;
@@ -98,11 +101,15 @@
   .side_bar {
     width: 15%;
     @include dfds;
+    // background-color: $Light;
+    // position: sticky;
+    // top: 110px;
+    // z-index: 100;
     overflow-x: hidden;
     .bar_links {
       width: 100%;
       @include da;
-      margin-top: 20px;
+      margin-bottom: 20px;
       transition: $AllTransition;
       .bar_icon {
         font-size: $LargeSize;
@@ -153,9 +160,9 @@
     .slider_cards {
       width: 100%;
       margin-top: 30px;
-      padding: 10px;
-      .swiper-slide {
-        width: 22%;
+      @include dj;
+      .swiper_slider {
+        width: 30%;
         @include dfds;
         background-color: $TextColor;
         cursor: pointer;
@@ -164,7 +171,7 @@
         position: relative;
         img {
           width: 100%;
-          height: 220px;
+          height: 300px;
           border-radius: $AllRadius;
         }
         h4 {
@@ -172,10 +179,13 @@
           font-size: $MiddleSize;
           color: $Light;
           margin-top: 15px;
+          margin-left: 10px;
           letter-spacing: 1px;
         }
         .rank {
+          width: 100%;
           @include da;
+          margin-left: 10px;
           span {
             @include da;
             margin-right: 30px;
@@ -289,10 +299,119 @@
         }
       }
     }
+    .music_player {
+      width: 100%;
+      @include dcsb;
+      margin-top: 50px;
+      .player_box {
+        width: 60%;
+        @include dcsb;
+        padding: 25px;
+        border-radius: $AllRadius;
+        background-color: $TextColor;
+        .pbox_title {
+          @include da;
+          .mimg_c {
+            width: 100px;
+            height: 100px;
+            border-radius: $AllRadius;
+            img {
+              width: 100%;
+              height: 100%;
+              border-radius: $AllRadius;
+            }
+          }
+          .mtext_c {
+            margin-left: 30px;
+            @include dfds;
+            h4 {
+              font-weight: 600;
+              font-size: $MiddleSize;
+              color: $Light;
+            }
+            span {
+              @include da;
+              margin-top: 5px;
+              i {
+                font-size: $MiddleSize;
+                color: $Warning;
+              }
+              small {
+                font-weight: 400;
+                font-size: $SmallSize;
+                color: $Light;
+                margin-left: 5px;
+                margin-top: 2px;
+              }
+            }
+          }
+        }
+        .pause {
+          @include dcc;
+          padding: 15px 5px;
+          background-color: $Warning;
+          border-radius: $AllRadius;
+          cursor: pointer;
+          i {
+            font-size: $MediumSize;
+            color: $Dark;
+          }
+        }
+      }
+      .pimgalon {
+        width: 15%;
+        height: 150px;
+        border-radius: $AllRadius;
+        cursor: pointer;
+        overflow: hidden;
+        img {
+          width: 100%;
+          height: 100%;
+          border-radius: $AllRadius;
+        }
+      }
+    }
   }
   .extra_side {
     width: 25%;
     @include dfds;
     overflow-x: hidden;
+    .banner_img_slider {
+      width: 100%;
+      height: 250px;
+      @include dcc;
+      border-radius: $AllRadius;
+      position: relative;
+      .bmain_img_old {
+        width: 100%;
+        height: 100%;
+        border-radius: $AllRadius;
+      }
+      .change {
+        width: 85%;
+        margin: 0 auto;
+        @include dcsb;
+        background-color: rgba(0, 0, 0, 0.3);
+        padding: 15px;
+        border-radius: $AllRadius;
+        position: absolute;
+        bottom: 20px;
+        .bchange_img_new {
+          width: 23%;
+          border-radius: 10px;
+          cursor: pointer;
+        }
+      }
+      .blike_icon_red {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        padding: 10px;
+        color: $Danger;
+        border-radius: 50%;
+        background-color: $TextColor;
+        font-size: $MediumSize;
+      }
+    }
   }
 }
